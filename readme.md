@@ -52,8 +52,8 @@
 
 * Test cases ( In addition to the above validations, following edge cases can be added too.)
     * check all endpoints without schema and data
-    * check all endpoints with shema but no data
-    * post a larger payload (thousnnds of contacts) 
+    * check all endpoints with schema but no data
+    * post a larger payload (thousands of contacts) 
     * Check pagination on /contacts endpoint
     * check for sql injection, however parameterized procedures will block them
     * CORS check, if required.
@@ -61,7 +61,7 @@
 * TODO / Suggestions  
     * ORM with repository pattern to handle db operations.
     * Logging fo requests/responses to capture errors, 
-    * Stored procedure to miniming roundtrips, leverage query compilation & make db calls efficient 
+    * Stored procedure to minimizing round-trips, leverage query compilation & make db calls efficient 
     * if this API is only mean from fewer clients, it can have CORS headers match too
     
 ### To Run 
@@ -86,7 +86,7 @@
 Main.go is the entry point of this api, and it hosts app.go, which handles the req/res followed by model.go, which interacts with db server.
 main.go -> app.go -> models.go -> db 
 
-It also a test file called main_test.go, which can be run like this.
+It also has a test file called main_test.go, which can be run like this.
 \> go test -v
 
 
