@@ -1,0 +1,5 @@
+go-mux-api.bin
+mod/
+vendor/
+.env
+*.exe
